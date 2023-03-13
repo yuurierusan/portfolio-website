@@ -13,7 +13,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: 'https://linkedin.com/jonshean',
-            style: ' rounded-tr-md',
+            style: ' rounded-tr-md rounded-br-md',
         },
         {
             id: 2,
@@ -23,6 +23,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: 'https://github.com/yuurierusan',
+            style: ' rounded-tr-md rounded-br-md',
         },
         {
             id: 3,
@@ -32,6 +33,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: 'mailto:yuurieru@icloud.com',
+            style: ' rounded-tr-md rounded-br-md',
         },
         {
             id: 4,
@@ -41,7 +43,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: '/resume.pdf',
-            style: ' rounded-br-md',
+            style: ' rounded-tr-md rounded-br-md',
             download: true,
         },
     ]
@@ -52,7 +54,7 @@ const SocialLinks = () => {
                     <li
                         key={id}
                         className={
-                            'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md bg-gray-500' +
+                            'mt-2 flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md bg-gray-500' +
                             '' +
                             style
                         }>
