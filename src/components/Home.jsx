@@ -1,30 +1,33 @@
-import React from 'react'
 import HeroImage from '../assets/heroImage.png'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
+import { Link } from 'react-scroll'
 
 const Home = () => {
     return (
         <div
             name='home'
             className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
-            <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row '>
-                <div className='mt-20 flex flex-col justify-center h-full'>
+            <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
+                <div className='flex flex-col justify-center h-full'>
                     <h2 className='text-4xl sm:text-7xl font-bold text-white'>
-                        I'm a Software Developer
+                        I'm a Full Stack Developer
                     </h2>
-
                     <p className='text-gray-500 py-4 max-w-md'>
-                        I am actively developing my abilities in software
-                        development through expert-led instruction in
-                        technologies such as HTML, CSS, JS, React, Mongo and
-                        SQL. I am committed to hands-on learning and expanding
-                        my expertise in the industry's most in-demand
-                        technologies. I am also proficient in various computer
-                        environments, including Windows, Macintosh, and Linux.
+                        As a skilled Software Engineer proficient in JS, Python,
+                        Vue, React, CSS, HTML, Tailwind, Node, Express, Monogo,
+                        Postgres, zsh, firebase, amplify, heroku, dotnet, flask,
+                        adobe suite, and postman, I am dedicated to delivering
+                        innovative solutions that exceed expectations and drive
+                        business success, seeking challenging opportunities to
+                        expand my technical expertise.
                     </p>
 
                     <div>
-                        <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                        <Link
+                            to='portfolio'
+                            smooth
+                            duration={500}
+                            className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                             Projects
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdOutlineKeyboardArrowRight
@@ -32,10 +35,11 @@ const Home = () => {
                                     className='ml-1'
                                 />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
-                <div className='mt-20 w-2/3 h-auto'>
+
+                <div>
                     <img
                         src={HeroImage}
                         alt='my profile'
@@ -46,4 +50,5 @@ const Home = () => {
         </div>
     )
 }
+
 export default Home
