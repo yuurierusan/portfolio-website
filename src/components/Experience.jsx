@@ -43,6 +43,36 @@ const Experience = () => {
             title: 'GitHub',
             style: 'shadow-gray-400',
         },
+        {
+            id: 9,
+            src: 'https://seeklogo.com/images/A/aws-amplify-logo-D68DDB5AB1-seeklogo.com.png',
+            title: 'Amplify',
+            style: 'shadow-orange-500',
+        },
+        {
+            id: 10,
+            src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/2048px-Bash_Logo_Colored.svg.png',
+            title: 'Bash',
+            style: 'shadow-gray-500',
+        },
+        {
+            id: 11,
+            src: 'https://www.brainspire.com/hubfs/asp.net-logo.png',
+            title: '.NET',
+            style: 'shadow-blue-500',
+        },
+        {
+            id: 12,
+            src: 'https://w7.pngwing.com/pngs/545/451/png-transparent-node-js-express-js-javascript-solution-stack-web-application-others-angle-text-rectangle-thumbnail.png',
+            title: 'Express',
+            style: 'shadow-gray-500',
+        },
+        {
+            id: 13,
+            src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png',
+            title: 'Figma',
+            style: 'shadow-orange-500',
+        },
     ]
 
     return (
