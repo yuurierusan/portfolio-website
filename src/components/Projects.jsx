@@ -52,7 +52,7 @@ const Projects = () => {
                             <img
                                 src={src}
                                 alt=''
-                                className='rounded-md duration-200 hover:scale-105'
+                                className='w-96 h-52 rounded-md duration-200 hover:scale-105'
                             />
                             <div
                                 onClick={href}
