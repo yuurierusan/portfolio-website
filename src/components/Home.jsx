@@ -22,17 +22,17 @@ const Home = () => {
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
                     <div className='mx-auto max-w-3xl text-center'>
-                        <h1 className='typewriter bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl'>
+                        <h1 className='typewriter bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-md font-extrabold text-transparent '>
                             {currentText}
                         </h1>
 
-                        <p className='typewriter mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white'>
+                        <p className='typewriter mx-auto mt-4 max-w-xl text-sm text-white'>
                             {currentText2}
                         </p>
 
                         <div className='mt-8 flex flex-wrap justify-center gap-4'></div>
                     </div>
-                    <div>
+                    <div className='flex justify-center'>
                         <Link
                             to='projects'
                             smooth

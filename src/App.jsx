@@ -12,10 +12,10 @@ function App() {
             <NavBar />
             <Home />
             <About />
+
             <Projects />
             <Experience />
             <Contact />
-
             <SocialLinks />
         </div>
     )
