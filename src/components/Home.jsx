@@ -1,33 +1,43 @@
-import HeroImage from '../assets/heroImage.png'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-scroll'
+import { useState, useEffect } from 'react'
 
 const Home = () => {
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const textArray = [" Hi!, I'm Jonshea Nutson "]
+    const textArray2 = [' A Software Engineer based in Texas ']
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentIndex((currentIndex) => currentIndex + 1)
+        }, 100) // change the interval time as per your requirement
+        return () => clearInterval(intervalId)
+    }, [])
+
+    const currentText = textArray.slice(0, currentIndex + 1).join('')
+    const currentText2 = textArray2.slice(0, currentIndex + 1).join('')
     return (
         <div
             name='home'
             className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-4xl sm:text-7xl font-bold text-white'>
-                        I'm a Full Stack Developer
-                    </h2>
-                    <p className='text-gray-500 py-4 max-w-md'>
-                        As a skilled Software Engineer proficient in JS, Python,
-                        Vue, React, CSS, HTML, Tailwind, Node, Express, Monogo,
-                        Postgres, zsh, firebase, amplify, heroku, dotnet, flask,
-                        adobe suite, and postman, I am dedicated to delivering
-                        innovative solutions that exceed expectations and drive
-                        business success, seeking challenging opportunities to
-                        expand my technical expertise.
-                    </p>
+                    <div className='mx-auto max-w-3xl text-center'>
+                        <h1 className='typewriter bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl'>
+                            {currentText}
+                        </h1>
 
+                        <p className='typewriter mx-auto mt-4 max-w-xl sm:text-xl/relaxed text-white'>
+                            {currentText2}
+                        </p>
+
+                        <div className='mt-8 flex flex-wrap justify-center gap-4'></div>
+                    </div>
                     <div>
                         <Link
-                            to='portfolio'
+                            to='projects'
                             smooth
                             duration={500}
-                            className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                            className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 cursor-pointer'>
                             Projects
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdOutlineKeyboardArrowRight
@@ -37,14 +47,6 @@ const Home = () => {
                             </span>
                         </Link>
                     </div>
-                </div>
-
-                <div>
-                    <img
-                        src={HeroImage}
-                        alt='my profile'
-                        className='rounded-2xl mx-auto w-2/3 md:w-full'
-                    />
                 </div>
             </div>
         </div>

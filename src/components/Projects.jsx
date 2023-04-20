@@ -54,17 +54,17 @@ const Projects = () => {
                                 alt=''
                                 className='w-96 h-52 rounded-md duration-200 hover:scale-105'
                             />
-                            <div
-                                onClick={href}
-                                className='flex items-center justify-center'>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
+                            <div className='flex items-center justify-center'>
+                                <a
+                                    href={href}
+                                    className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
                                     GitHub
-                                </button>
-                                <button
-                                    onClick={href2}
+                                </a>
+                                <a
+                                    href={href2}
                                     className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
                                     Deployed
-                                </button>
+                                </a>
                             </div>
                         </div>
                     ))}

@@ -5,7 +5,7 @@ module.exports = {
         extend: {},
         fontFamily: {
             signature: ['Great Vibes'],
-            sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            sans: ['Inter var'],
         },
     },
     plugins: [],
