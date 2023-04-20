@@ -28,12 +28,11 @@ const About = () => {
                 <p className='text-xl'>
                     In addition to creating content, I'm actively expanding my
                     knowledge in software development. I'm currently learning
-                    JavaScript, Python, React, Django, and Node.js through
+                    JavaScript, Python, React, Flask, and Node through
                     expert-led instruction. Learning new technologies hands-on
                     is my jam! And when I'm not creating content or coding, you
-                    can find me producing music or playing the percussion - I
-                    have a strong understanding of music theory. Let's connect
-                    and explore our creative passions together!
+                    can find me producing music or playing games - I Let's
+                    connect and explore our creative passions together!
                 </p>
             </div>
         </div>
